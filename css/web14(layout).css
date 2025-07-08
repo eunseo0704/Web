@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+}
+
+header img {
+    float: left;
+    margin-left: 10px;
+}
+
+header ul {
+    float: right;
+    margin-right: 10px;
+}
+
+header ul li {
+    display: inline;
+}
+
+nav > ul {
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0px;
+    clear: both;
+    margin: 16px 0px 0px 0px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+
+#nav_sub img {
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    position: absolute;
+    right: 100px;
+    top: 25px;
+    box-shadow: 5px 5px 18px 5px gray;
+}
+
+#nav_sub {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-attachment: scroll;
+    background-image: url(https://image.kmib.co.kr/online_image/2018/0821/611211110012618663_1.jpg);
+    /* background-repeat: repeat-x; */
+
+    background-size: cover;
+
+    /* background-color: rgb(254, 202, 242);
+    border: 5px dotted black;
+    padding: 20px; */
+    /* background-origin: content-box; */
+    background-position: left center;
+
+}
+
+#pos {
+    position: absolute;
+    right: 120px;
+    top: 20px;
+    color: rgb(175, 0, 88);
+    text-shadow: 3px 3px 1px white;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    height: 800px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, blue, pink 30%, white 70%, blue);
+    background: repeating-linear-gradient(to right, rgb(255, 255, 151), rgb(255, 255, 144) 20px, rgb(255, 163, 163) 20px, rgb(255, 165, 165) 40px);
+}
+
+.grad {
+    width: 400px;
+    height: 150px;
+    background: radial-gradient(circle at 20% 20%, white, yellow, red);
+}
+
+.grad {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px gray;
+    background: radial-gradient(circle at 20% 20%, white, yellow 30%, red);
+    
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <title>삼디 동아리 신청 지원서</title>
+        <label>아이디(6자이상): <input type="text" autofocus minlength="6"  size="10"></label><br>
+        <label for="pw">비밀번호:</label><input id="pw" type="password" required><br>
+        <input type="submit" value="로그인"><input type="reset"><input type="image" src="../images/login.png" alt="로그인">
+        <input type="button" value="아이디/비번 찾기">
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>삼디 동아리 지원서📚</legend>
+            
+            <label>이메일: <input type="url" value="@dgsw.com"></label><br>
+            <label>📛이름: <input type="search" placeholder="빈칸 없이 입력하세요."></label><br>
+            <label>📞연락처: <input type="search" placeholder="010-0000-0000"></label><br>
+            <label>💪지원 동기: <input type="search" placeholder="동아리 지원 동기 입력"></label><br>
+            <label>❤️좋아하는 게임이나 드라마: <input type="search" placeholder="한개이상 작성"></label><br>
+            <br>
+            <label>📑지원 분야</label><br>
+
+
+            <label><input type="checkbox" name="prod" value="p3">백엔드</label><br>
+            <label><input type="checkbox" name="prod" value="p5">유니티</label><br>
+            <label><input type="checkbox" name="prod" value="p5">모델링</label><br>
+
+
+            <br>
+            <label><input type="radio" name="pack" value="yes">전공 정함</label>
+            <label><input type="radio" name="pack" value="no" checked>전공 안 정함</label><br>
+            <textarea cols="20" rows="3">정했다면 어떤걸 정했고 그 이유</textarea><br>
+            <textarea cols="20" rows="3">더 하고 싶은 말이나 각오</textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>배워 보고 싶은 내용</legend>
+            <label>앱이나 주제: <input type="search"></label>
+            <label>배워 보고 싶은 이유: <input type="search"></label>
+        </fieldset>
+
+        <button type="submit">접수하기</button>
+        <button type="reset">재작성</button>
+        <button type="button">문의사항</button>
+
+
+        
+
+    </form>
+</body>
+</html>

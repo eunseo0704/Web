@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>아이디(6자이상): <input type="text" autofocus minlength="6" value="dgsw" size="10"></label>
+        <label for="pw">비밀번호:</label><input id="pw" type="password" required>
+        <input type="submit" value="로그인"><input type="reset"><input type="image" src="../images/login.png" alt="로그인">
+        <input type="button" value="아이디/비번 찾기">
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>상품 정보</legend>
+            <label>검색: <input type="search" placeholder="검색어를 입력하세요."></label><br>
+            <label>웹사이트: <input type="url" value="https://"></label>
+            <br>
+
+            <label><input type="checkbox" name="prod" value="h3">가정용 3kg</label>
+            <input type="number" value="2" min="0" max="20" step="2"><br>
+            <label><input type="checkbox" name="prod" value="h5" checked>가정용 5kg</label><br>
+            <input type="range" min="0" max="20" step="2" value="0"><br>
+            <label><input type="checkbox" name="prod" value="p3">선물용 3kg</label><br>
+            <label><input type="checkbox" name="prod" value="p5">선물용 5kg</label><br>
+
+            <select>
+                <option value="hom3">가정용 3kg</option>
+                <option value="hom5" selected>가정용 5kg</option>
+                <option value="pre3">선물용 3kg</option>
+                <option value="pre5">선물용 5kg</option>
+            </select>
+
+            <br>
+            <label><input type="radio" name="pack" value="yes">포장</label>
+            <label><input type="radio" name="pack" value="no" checked>포장 안함</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>배송 정보</legend>
+            <label>이메일: <input type="email" readonly></label>
+            <label>배송일 지정: <input type="datetime-local"></label>
+        </fieldset>
+
+        <button type="submit">주문 완료</button>
+        <button type="reset">재작성</button>
+        <button type="button">문의사항</button>
+        
+        <button type="submit"><img src="../images/login.png" alt="로그인">
+        </button>
+
+        <textarea cols="20" rows="3"></textarea><br>
+
+    </form>
+</body>
+</html>

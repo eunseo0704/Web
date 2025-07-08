@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>실버미션 - 1인가구와 노인을 위한 미션 사이트</title>
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <!-- 사이트의 제목, 소개 -->
+    <header>
+      <div class="header-content">
+        <h1>실버미션</h1>
+        <p>1인가구와 노인을 위한 미션 사이트</p>
+      </div>
+      <div class="header-link">
+        <!-- 로그인 회원가입 링크) -->
+        <a href="login.html">로그인</a> |
+        <a href="join.html">회원가입</a> |
+        <a href="#">로그아웃</a>
+      </div>
+    </header>
+
+    <!--네비게이션 -->
+    <nav class="nav-container">
+      <ul class="nav-menu">
+        <li>
+          <a href="#">설정</a> <!-- 설정 메뉴 -->
+          <ul class="dropdown-menu">
+            <li><a href="#">웹사이트 소개</a></li>
+            <li><a href="#">알림</a></li>
+            <li><a href="#">개인정보 변경</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">미션</a> <!-- 미션 메뉴 -->
+          <ul class="dropdown-menu">
+            <li><a href="mission.html">참여 미션</a></li>
+            <li><a href="#">미션 랭킹</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">포인트, 상품</a> <!-- 포인트 및 상품 메뉴 -->
+          <ul class="dropdown-menu">
+            <li><a href="#">포인트 적립내역</a></li>
+            <li><a href="point.html">포인트 사용하기</a></li>
+            <li><a href="#">포인트 확인</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">문의사항</a> <!-- 문의사항 메뉴 -->
+          <ul class="dropdown-menu">
+            <li><a href="#">자주 묻는 질문</a></li>
+            <li><a href="#">질문하기</a></li>
+            <li><a href="#">서비스 정책</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!--  메인 콘텐츠-->
+    <!-- 주요 콘텐츠 표시 영역 -->
+    <main>
+      <!-- 출석 체크 -->
+      <section>
+        <h2>출석체크</h2>
+        <button onclick="completeMission()">출석체크 완료</button> <!-- 버튼 클릭 시 미션 완료 -->
+      </section>
+
+      <!-- 회원 활동 내역 -->
+      <section>
+        <h2>회원 활동 내역</h2>
+        <!-- 활동 내용을 표시하는 테이블 -->
+        <table border="1" style="width:100%; text-align:center; border-collapse: collapse;">
+          <thead>
+            <tr>
+              <th>번호</th> <!-- 활동 번호 -->
+              <th>활동 내용</th> <!-- 활동 이름 -->
+              <th>날짜</th> <!-- 활동 날짜 -->
+              <th>상태</th> <!-- 활동 상태 -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>30분 산책</td><td>2023-06-23</td><td>완료</td></tr>
+            <tr><td>2</td><td>물 2리터 마시기</td><td>2023-06-24</td><td>완료</td></tr>
+            <tr><td>3</td><td>독서 1시간</td><td>2023-06-25</td><td>진행 중</td></tr>
+            <tr><td>4</td><td>자녀들과 통화 10분</td><td>2023-06-26</td><td>미진행</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+    
+      <section>
+        <h2>내 활동</h2>
+        <p>
+          <span id="missionCount">0</span>개 미션 완료, 
+          <span id="point">0</span>포인트 적립됨
+        </p>
+      </section>
+    </main>
+
+    <!--미션 수행 단계  -->
+    <section class="mission-step-section">
+      <h2>미션 수행 단계</h2>
+      <ol>
+        <li>미션 확인</li>
+        <li>미션 수행</li>
+        <li>인증 사진 업로드</li>
+        <li>포인트 적립</li>
+      </ol>
+    </section>
+  </div>
+
+
+  <!-- 개인정보 관련 정보 및 문의처 -->
+  <footer>
+    <p>개인정보 처리 방침 문의: 010-xxxx-xxxx / 담당자: 홍길동</p>
+  </footer>
+
+  <!-- js 파일 연결 -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+table {
+    /* caption-side: bottom; */
+    border: 2px solid blue;
+    border-spacing: 5px 10px;
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    text-align: left;
+}
+
+td {
+    border: 1px solid black;
+}
+
+th {
+    border-bottom: 1px double black;
+    border-left: 1px solid black;
+    background-color: pink;
+}

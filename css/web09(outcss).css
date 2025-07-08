@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+#container {
+    width: 600px;
+    margin: 20px auto;
+}
+
+h1 {
+    display: inline-block;
+    background-color: #0404aa;
+    color: #fff;
+    /*font-family: "함초롬돋움", 나눔명조;*/
+    font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.accent {
+    font-weight: bold;
+    color: red;
+}
+
+.fsize {
+    /* font-size: 10px; */
+    /* font-size: 1.5em; */
+
+    font-size: 1.5rem;
+
+    /* font-style: obliquelic; */
+
+    font-weight: 900;
+
+    color: rgb(15, 162, 96, 0.5)
+}

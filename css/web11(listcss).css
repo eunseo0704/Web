@@ -1,0 +1,13 @@
+.book1 {
+    /* list-style-type: square; */
+    /* list-style-image: url(../images/icon-png.png); */
+    list-style-type: none;
+}
+
+.book2 {
+    /* list-style-type: decimal-leading-zero; */
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    padding: 15px;
+    list-style: lower-roman inside;
+}
