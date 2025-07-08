@@ -1,0 +1,178 @@
+body {
+  font-family: sans-serif; /* 전체 글꼴을 sans-serif로 설정 */
+  margin: 0; /* 바깥 여백 제거 */
+  padding: 0; /* 안쪽 여백 제거 */
+  background-color: #f2f2f2; /* 연회색 배경 */
+}
+
+header {
+  background-color: #555879; /* 헤더 배경색 설정 */
+  color: white; /* 헤더 안 글자색 흰색으로 설정 */
+  padding: 20px; /* 안쪽 여백 20px */
+  display: flex; /* 플렉스 박스 사용 */
+  justify-content: space-between; /* 양쪽 끝으로 요소 배치 */
+  align-items: center; /* 수직 중앙 정렬 */
+  flex-wrap: wrap; /* 줄 바꿈 허용 */
+}
+
+.header-content {
+  text-align: center; /* 텍스트 가운데 정렬 */
+  width: 100%; /* 너비 100% */
+}
+
+header h1 {
+  margin: 0; /* 바깥 여백 제거 */
+  font-size: 50px; /* 폰트 크기 50px */
+}
+
+header p {
+  margin: 5px 0 0; /* 위쪽 5px, 나머지 0 */
+  font-size: 16px; /* 폰트 크기 16px */
+}
+
+.header-link {
+  position: absolute; /* 절대 위치 지정 */
+  top: 20px; /* 위에서 20px 떨어짐 */
+  right: 20px; /* 오른쪽에서 20px 떨어짐 */
+}
+
+.header-link a {
+  color: white; /* 링크 글자색 흰색 */
+  text-decoration: none; /* 밑줄 제거 */
+  margin: 0 10px; /* 좌우 여백 10px */
+}
+
+.header-link a:hover {
+  text-decoration: underline; /* 밑줄 표시 */
+  color: #f4ebd3; /* 연노랑 계열로 색 변경 */
+}
+
+nav {
+  background-color: #98a1bc; /* 내비 배경색 설정 */
+  padding: 10px; /* 안쪽 여백 10px */
+}
+
+nav ul {
+  list-style: none; /* 리스트 점 제거 */
+  margin: 0; /* 바깥 여백 제거 */
+  padding: 0; /* 안쪽 여백 제거 */
+  display: flex; /* 가로로 나열 */
+  justify-content: space-around; /* 항목들 고르게 배치 */
+}
+
+nav li {
+  position: relative; /* 드롭다운 메뉴를 위한 기준 */
+}
+
+nav a {
+  color: white; /* 링크 글자색 흰색 */
+  text-decoration: none; /* 밑줄 제거 */
+  padding: 10px 20px; /* 안쪽 여백 설정 */
+  display: block; /* 블록 요소로 변경 */
+}
+
+nav a:hover {
+  background-color: #f4ebd3; /* 배경색 변경 */
+  color: #555879; /* 글자색 변경 */
+  border-radius: 5px; /* 둥근 모서리 */
+}
+
+nav ul ul {
+  display: none; /* 기본적으로 숨김 */
+  position: absolute; /* 부모 기준 절대 위치 */
+  top: 100%; /* 아래로 위치 */
+  background-color: #ffffff; /* 흰 배경 */
+  list-style: none; /* 리스트 점 제거 */
+  padding: 0; /* 안쪽 여백 제거 */
+  margin: 0; /* 바깥 여백 제거 */
+  border-radius: 5px; /* 둥근 모서리 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+nav ul li:hover > ul {
+  display: block; /* 마우스 올리면 보이게 함 */
+}
+
+nav ul ul li a {
+  color: #555879; /* 링크 색 */
+  padding: 10px 20px; /* 여백 설정 */
+  white-space: nowrap; /* 줄 바꿈 방지 */
+}
+
+nav ul ul li a:hover {
+  background-color: #98a1bc; /* 배경색 변경 */
+  color: white; /* 글자색 변경 */
+}
+
+main {
+  display: flex; /* 플렉스 사용 */
+  flex-direction: column; /* 세로 방향 배치 */
+  align-items: center; /* 가운데 정렬 */
+  padding: 40px 20px; /* 안쪽 여백 */
+  background-color: #f9f9f9; /* 배경색 설정 */
+  min-height: calc(100vh - 160px); /* 최소 높이 계산 */
+  width: 100%; /* 전체 너비 */
+  max-width: 1200px; /* 최대 너비 제한 */
+  margin: 0 auto; /* 가운데 정렬 */
+  box-sizing: border-box; /* 박스 크기 계산 방식 지정 */
+}
+
+main section {
+  width: 100%; /* 전체 너비 */
+  max-width: 1000px; /* 최대 너비 제한 */
+  background-color: white; /* 배경 흰색 */
+  padding: 30px; /* 안쪽 여백 */
+  border-radius: 12px; /* 둥근 테두리 */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 그림자 효과 */
+}
+
+section h2 {
+  margin-top: 0; /* 위쪽 여백 제거 */
+  font-size: 24px; /* 제목 크기 설정 */
+}
+
+table {
+  border-collapse: collapse; /* 테두리 합치기 */
+  width: 100%; /* 너비 전체 */
+  margin-top: 20px; /* 위 여백 */
+  background-color: white; /* 배경 흰색 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 */
+}
+
+th, td {
+  padding: 15px; /* 안쪽 여백 */
+  border: 1px solid #ccc; /* 테두리 */
+  text-align: center; /* 가운데 정렬 */
+  font-size: 16px; /* 폰트 크기 */
+}
+
+th {
+  background-color: #555879; /* 헤더 배경색 */
+  color: white; /* 글자색 흰색 */
+}
+
+td {
+  background-color: #f9f9f9; /* 셀 배경 */
+}
+
+caption {
+  caption-side: top; /* 캡션을 위에 표시 */
+  font-weight: bold; /* 굵은 글씨 */
+  margin-bottom: 10px; /* 아래 여백 */
+  font-size: 18px; /* 크기 설정 */
+}
+
+footer {
+  background-color: #023047; /* 푸터 배경색 */
+  color: white; /* 글자색 흰색 */
+  width: 100%; /* 너비 전체 */
+  margin-top: 40px; /* 위쪽 여백 */
+  display: flex; /* 플렉스 박스 */
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center; /* 수직 정렬 */
+  height: 60px; /* 높이 설정 */
+}
+
+footer p {
+  margin: 0; /* 바깥 여백 제거 */
+}

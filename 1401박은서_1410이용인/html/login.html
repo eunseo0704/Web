@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css" /> 
+</head>
+<body>
+
+
+    <header>
+        <div class="header-content">
+          <h1>
+            <a href="main.html" class="home-link">실버미션</a> <!-- 홈으로 이동하는 링크 -->
+          </h1>
+          <p>1인가구와 노인을 위한 미션 사이트</p> 
+        </div>
+    </header>
+
+
+
+    <nav>
+        <ul>
+          <li><a href="#">설정</a></li> <!-- 설정 메뉴 -->
+          <li><a href="#">미션</a></li> <!-- 미션 메뉴 -->
+          <li><a href="#">포인트, 상품</a></li> <!-- 포인트 및 상품 메뉴 -->
+          <li><a href="#">문의사항</a></li> <!-- 문의사항 메뉴 -->
+        </ul>
+    </nav>
+    
+    <!-- 로그인 폼  -->
+    <!-- 로그인 기능 구현 -->
+    <form>
+      <h1>로그인</h1>
+      
+      <!-- 아이디 입력 -->
+      <div class="form_group">
+        <label for="id">아이디
+          <input type="text" id="id"> <!-- 아이디 입력-->
+        </label>
+      </div>
+
+      <!-- 비밀번호 입력 -->
+      <div class="form_group">
+        <label for="pw">비밀번호
+          <input type="text" id="pw"> <!-- 비밀번호 입력-->
+        </label>
+      </div>
+
+      <!-- 로그인 버튼 -->
+      <div class="form_group">
+        <button>로그인</button> <!-- 로그인 동작 버튼 -->
+      </div>
+
+      <!-- 추가 메뉴 -->
+      <div class="menu">
+        <a href="">가입하기</a> <!-- 회원가입 페이지로 이동 -->
+        <a href="">비밀번호를 잊어버리셨나요?</a> <!-- 비밀번호 찾기 기능 -->
+      </div>
+    </form>
+
+    <!-- js 파일 연결 -->
+    <script src="../js/login.js"></script> <!-- 로그인 관련 스크립트 -->
+</body>
+</html>

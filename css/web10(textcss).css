@@ -1,0 +1,51 @@
+.tstart {
+    text-align: start;
+    direction: rtl;
+}
+
+.tleft {
+    text-align: left;
+    direction: rtl;
+}
+
+.tend {
+    text-align: end;
+    direction: rtl;
+}
+
+.tright {
+    text-align: right;
+    direction: rtl;
+    line-height: 2;
+}
+
+.tjust {
+    text-align: justify;
+    line-height: 0.7;
+}
+
+.heading {
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+.tdeco {
+    /* text-decoration: underline; */
+    text-decoration: line-through;
+}
+
+.tshad {
+    text-shadow: -3px -3px 5px black;
+    color: red;
+}
+
+.ttans {
+    /* text-transform: capitalize; */
+    text-transform: uppercase;
+    /* letter-spacing: -10px; */
+    word-spacing: -10px;
+}

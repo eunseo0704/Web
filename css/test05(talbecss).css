@@ -1,0 +1,17 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+tr {
+    background-color: white;
+}
+
+.plan {
+    background-color: rgb(183, 101, 183);
+} 
