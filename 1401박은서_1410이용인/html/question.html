@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실버미션 - 질문하기</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/question.css"> </head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-content">
+                <h1><a href="main.html" class="home-link">실버미션</a></h1>
+                <p>1인가구와 노인을 위한 미션 사이트</p>
+            </div>
+            <div class="header-link">
+                <a href="login.html">로그인</a> |
+                <a href="join.html">회원가입</a> |
+                <a href="#" onclick="handleLogout()">로그아웃</a>
+            </div>
+        </header>
+
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">설정</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="setting.html">웹사이트 소개</a></li>
+                        <li><a href="#">알림</a></li>
+                        <li><a href="#">개인정보 변경</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">미션</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mission.html">참여 미션</a></li>
+                        <li><a href="#">미션 랭킹</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">포인트, 상품</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">포인트 적립내역</a></li>
+                        <li><a href="point.html">포인트 사용하기</a></li>
+                        <li><a href="#">포인트 확인</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의사항</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="question.html">질문하기</a></li> <li><a href="#">서비스 정책</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="question-form-section">
+                <h2>질문하기</h2>
+                <form action="#" method="post" class="question-form">
+                    <div class="form-group">
+                        <label for="question-type">문의 유형:</label>
+                        <select id="question-type" name="questionType" required>
+                            <option value="">--선택하세요--</option>
+                            <option value="general">일반 문의</option>
+                            <option value="mission">미션 관련</option>
+                            <option value="point">포인트/상품 관련</option>
+                            <option value="account">계정 관련</option>
+                            <option value="etc">기타</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">제목:</label>
+                        <input type="text" id="subject" name="subject" placeholder="질문 제목을 입력해주세요" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">내용:</label>
+                        <textarea id="content" name="content" rows="10" placeholder="자세한 내용을 입력해주세요" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">답변 받을 이메일 (선택):</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">질문 제출</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>개인정보 처리 방침 문의: 010-xxxx-xxxx / 담당자: 홍길동</p>
+        </footer>
+    </div>
+    </body>
+</html>

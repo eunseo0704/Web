@@ -1,0 +1,146 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex; /* Flexbox를 사용하여 전체 레이아웃 제어 */
+    flex-direction: column; /* 아이템들을 수직으로 정렬 */
+    min-height: 100vh; /* 뷰포트 전체 높이를 차지하도록 설정 */
+}
+
+header {
+    background-color: #555879;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-content {
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.home-link {
+    text-decoration: none;
+    color: white;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #98a1bc;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+nav a:hover {
+    color: #f4ebd3;
+    text-decoration: underline;
+}
+
+/* 로그아웃 컨테이너 스타일 */
+.logout-container {
+    margin: 60px auto;
+    width: 28rem;
+    max-width: 90%; /* 화면 크기가 줄어들었을 때도 잘 보이도록 최대 너비 설정 */
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-grow: 1; /* main 태그가 가능한 모든 공간을 차지하도록 설정 */
+    display: flex; /* 내부 요소 정렬을 위해 flexbox 사용 */
+    flex-direction: column; /* 세로 정렬 */
+    justify-content: center; /* 수직 가운데 정렬 */
+    align-items: center; /* 수평 가운데 정렬 */
+}
+
+.logout-container h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.logout-container p {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.logout-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%; /* 버튼이 컨테이너 너비에 맞게 조절되도록 설정 */
+    max-width: 300px; /* 너무 커지지 않도록 최대 너비 설정 */
+}
+
+.logout-links .button {
+    display: block;
+    width: 100%; /* 부모 .logout-links의 너비에 맞춤 */
+    padding: 0.8rem 1.5rem;
+    background-color: #555879;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 계산 */
+}
+
+.logout-links .button:hover {
+    background-color: #444760;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    /* position: relative; 와 margin-top 삭제 */
+    width: 100%;
+    margin-top: auto; /* Flexbox에서 footer를 항상 하단으로 밀어냄 */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

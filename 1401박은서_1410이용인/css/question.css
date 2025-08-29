@@ -1,0 +1,71 @@
+/* css/question.css */
+
+/* ⭐⭐ question.html 페이지의 main 태그에만 적용될 스타일 ⭐⭐ */
+main {
+    /* main.css에서 적용된 grid 속성을 덮어씌웁니다. */
+    display: block !important; /* !important를 사용하여 다른 스타일보다 우선순위를 높임 */
+    /* grid-template-columns, gap 등도 사실상 무효화됨 */
+}
+
+
+.question-form-section {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95); /* 메인 배경 이미지가 비치도록 반투명 */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 700px; /* 폼 섹션의 최대 너비 */
+    margin: 40px auto; /* 상하 여백 40px, 좌우 자동으로 가운데 정렬 */
+}
+
+.question-form-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+.question-form .form-group {
+    margin-bottom: 20px;
+}
+
+.question-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.question-form input[type="text"],
+.question-form input[type="email"],
+.question-form select,
+.question-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+.question-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.question-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #555879;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.question-form button[type="submit"]:hover {
+    background-color: #40425d;
+}

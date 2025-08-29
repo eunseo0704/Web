@@ -7,48 +7,95 @@
 </head>
 <body>
     <table border="1">
-        <caption>선물용과 가정용 상품 구성</caption>
-        <colgroup>
-            <col style="background-color: yellow;">
-            <col span="2" style="background-color: blue;">
-            <col style="background-color: pink;">
-        </colgroup>
-    <thead>
-            <td>용도</td>
-            <td>중량</td>
-            <td>개수</td>
-            <td>가격</td>
-        </tr>
-    </thead>
+    
+    
+        
     <tbody>
         <tr>
-            <td rowspan="2">선물용</td>
-            <td>3</td>
-            <td>11~16과</td>
-            <td>35000원</td>
+            <th colspan="2">회원기본정보</th>  
+        </tr>
+
+            <tr><td>아이디</td>
+            <td><input type="text" id="userId"></td>
+        </tr>
+      
+        <tr>
+            <td>비밀번호</td>
+            <td><input type="text" placeholder="4~12자의 대소문자와 숫자로 입력"></td>
         </tr>
         <tr>
-            <td>5</td>
-            <td>18~26과</td>
-            <td>52000원</td>
+            <td>비밀번호확인</td>
+            <td><input type="text" placeholder="4~12자의 대소문자와 숫자로 입력"></td>
         </tr>
         <tr>
-            <td rowspan="2">가정용</td>
-            <td>3</td>
-            <td>11~16과</td>
-            <td>30000원</td>
+            <td>메일주소</td>
+            <td><input type="text"> <input type="text" placeholder="@domain.com"></td>
         </tr>
         <tr>
-            <td>5</td>
-            <td>18~26과</td>
-            <td>47000원</td>
+            <td>연락처</td>
+            <td><input type="text" placeholder="하이픈(-)을 빼고 입력해주세요"></td>
+        </tr>
+        <tr>
+            <td>수신여부</td>
+            <td><input type="radio" name="pack" value="yes">수신<input type="radio" name="pack" value="no" checked>수신거부</td>
+        </tr>
+        <tr>
+            <td>이름</td>
+            <td><input type="text"></td>
         </tr>
     </tbody>
     <tfood>
         <tr>
-            <td colspan="4">맛있어요.</td>
+            <td"></td>
         </tr>
     </tfood>
     </table>
+
+    <table border="1">
+    
+        <tbody>
+            <tr><th colspan="4">개인신상정보</th>  </tr>
+    
+            <tr>
+                <td>주민등록번호</td>
+                <td><input type="text"> 예) 1234561234567</td>
+                <td>생일</td>
+                <td><input type="date"></td>
+            </tr>
+          
+            <tr>
+                <td>가족수</td>
+                <td><input type="text"></td>
+                <td>미팅일자</td>
+                <td><input type="date" ></td>
+            </tr>
+            <tr>
+                <td>가입경로</td>
+                <td><input type="text"></td>
+                <td>관심분야</td>
+                <td><input type="checkbox" type="checkbox" name="prod" value="p3" checked>컴퓨터 <input type="checkbox" type="checkbox" name="prod" value="p3">인터넷 <input type="checkbox" type="checkbox" name="prod" value="p3">여행 <input type="checkbox" type="checkbox" name="prod" value="p3">영화감상 <input type="checkbox" type="checkbox" name="prod" value="p3">음악감상</td>
+            </tr>
+            <tr>
+                <td>자기소개</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>첨부파일</td>
+                <td><input type="file" value="파일 선택"></type></td>
+            </tr>
+        </tbody>
+        <tfood>
+            <tr>
+                <td"></td>
+            </tr>
+        </tfood>
+        </table>
+
+        <button type="submit">회원가입</button>
+        <button type="reset">다시입력</button>
+        <button type="button">팝업창열기</button>
+        <button type="button">아이디알기</button>
+        <button type="button">메일주소로그남기기</button>
+        <button type="button">완료</button>
 </body>
 </html>
